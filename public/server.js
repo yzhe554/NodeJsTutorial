@@ -3,7 +3,7 @@ var fs = require('fs');
 
 // 404 Response
 function send404Response(response) {
-    response.writeHead(404, {"Content-Type": "text-plain"})
+    response.writeHead(404, {"Content-Type": "text-plain"});
     response.write("Error 404: Page not found!");
     response.end();
 }
